@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--计算即图形学网站，孔令德-->
+<html>
+    <head>
+        <meta  content="text/html;charset=utf-8" http-equiv="Content-Type" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="计算机图形学,孔令德,精品资源共享课,VC++,MFC,图形学原理,源程序"/>
+        <meta name="description" content="基于MFC研究计算机图形学原理的实现,提供了《计算机图形学基础教程（VC++版）》、《计算机图形学实践教程（VC++版）》、《计算机图形学基础教程（VC++版）习题解答与编程实践》、《计算机图形学实验及课程设计（VC++版）》4本系列教材和300多个源程序。采用类模块：CLine直线类、CFill填充类、CTransform变换类、CPerspective透视类、CZbuffer深度缓冲类、CLightSource光源类、CLighting光照类、CMaterial材质类、CTexture纹理类等，实现真实感图形的绘制。">
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="css/course.css">
+        <link rel="icon" type="image/x-icon" href="images/bc.png" />
+        <title>欢迎访问 孔令德计算机图形学精品资源共享课课程网站</title>
+    </head>
+    <body>
+        <script src="js/main.js"></script>
+        <!-- <div style="background-image: url(images/demo1.jpg);  top:100%;left: 100%"></div> -->
+        <div id="main">
+            <div id="nav">
+                <table style="width:1003px;  text-align:center; height:70px; border:0;" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td style="color:white; text-align: left;">
+                                <p style="font-size: 30px; line-height: 7px; padding-left: 50px;">
+                                    计算机几何学
+                                </p>
+                                <p style="font-size: 15px; padding-left: 50px;">
+                                    <a href="http://klingde.com" style="color:white" target="_blank ">孔令德教授</a>
+                                </p>
+                            </td>
+                            <td style="color:white; text-align: right;">
+                                <img src="images/bc2.png" alt="博创" title="博创" style="width: 40px; height: 40px; vertical-align: -50%;">
+                                <p class="rainbow-text" style="font-size: 30px; padding-right: 50px; vertical-align: auto;">
+                                    计算几何慕课建设成果展示
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="menu">
+                <ul style="list-style: none;">
+                    <li>
+                        <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                        <dl>
+                            <dt><a href="index.html">首页</a>
+                            </dt>
+                            <span class="STYLE">
+                                <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                            </span>
+                        </dl>
+                    </li>
+                    <li class="HomePage">
+                        <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                        <dl>
+                            <dt><a style="color: rgb(7,104,202);" href="course.html">课程介绍</a>
+                                <!-- <dd>&nbsp;</dd>
+                                <dd>&nbsp;</dd> -->
+                            </dt>
+                        </dl>
+                        <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                    </li>
+                    <li>
+                        <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                        <dl>
+                            <dt>
+                                <a href="micro class.html">微课视频</a>
+                            </dt>
+                        </dl>
+                        <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                    </li>
+                    <li>
+                        <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                        <dl>
+                            <dt><a href="courseware.html">章节课件</a></dt>
+                        </dl>
+                        <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                    </li>
+                    <li>
+                        <span class="STYLE">
+                            <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                         </span>
+                        <dl>
+                            <dt>
+                                <a href="member.html">成员介绍</a>
+                            </dt>
+                                <!-- <dd class="first">
+                                    <a href="teachers.html">教师介绍</a>
+                                </dd>
+                                <dd class="last">
+                                    <a href="students.html">学生介绍</a>
+                                </dd> -->
+                        </dl>
+                                    <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                    </li>
+                </ul>
+            </div>
+            <div id="banner-box">
+                <div id="banner">
+                    <img src="images/Utah_teapot_simple_2.png" alt="犹他茶壶" style="width: 700px; height: 400px; border-bottom-left-radius: 20px; box-shadow: 5px 5px 10px gray;">
+                </div>
+                <div style="background-color: white; filter: alpha(opacity=60); background-color: rgba(255, 255, 255, 0.6); width: 700px; height: 400px; position: absolute; border-bottom-left-radius: 20px; box-shadow: 5px 5px 10px gray;">
+                    <p style="font-size: 2.5em; text-align: center; opacity: 1; line-height: 0px;">
+                        计算机几何学课程介绍
+                    </p>
+                    <div id="scrool-style" style="width: 600px; height: 330px; margin-left: 50px; margin-top: -10px; overflow: auto;">
+                        <!-- <div> 正文部分 -->
+                        <p style="font-size: 1.5em;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;数学的研究对象是“数”与“形”。几何学是研究“形”的一门数学学科。计算几何对物体的形状信息进行计算机表示、分析与综合。计算几何的理论只有借助于计算机的编程进行实现，才能被更好地理解和应用。本课程的教学内容涉及Bezier、B样条、NURBS曲线曲面。其中，“数”是指Bezier、B样条、NURBS等曲线曲面理论中数学公式的严格推理，“形”是指借助于计算机的强大计算能力，将曲线曲面的数学公式表达为图形。为了降低理解曲线曲面理论的难度，本课程的出发点是基于计算几何的基本理论，使用Visual C++编程生成曲线曲面图形，包括二维曲线图形和三维曲面图形。借助于三维图形学技术，基于双缓冲技术建立物体的线框模型，支持键盘方向键旋转图形操作，可从各个角度旋转曲面进行观察。本课程给出了大量的源程序案例，模块性强、注释规范、容易理解。这些代码案例源程序不仅可以从实践上印证理论的正确性，也从图形可视化角度展示理论应用的效果。本课程提供了6个实验项目及2个课程设计项目，并给出了Utah茶壶和花瓶的源代码。学习本书的先行课程包括高等数学、C++程序设计等。本课程适合于计算机科学与技术专业、数字媒体技术专业、数学与应用数学专业学生学习。
+                        </p>
+                    </div>
+                </div>
+                <div id="rightdiv">
+                    <div id="picture">
+                        <div id="indicator">
+                                <ul>
+                                    <li class style="color: red;"></li>
+                                    <li class></li>
+                                    <li class></li>
+                                    <li class></li>
+                                    <li class></li>
+                                    <li class></li>
+                                    <li class></li>
+                                </ul>
+                            </div>
+                        <img id="currentPicture" src="images/index/1.gif" alt="图片加载失败" style="width: 300px; height: 200px;">
+                        <p style="font-size: 15px; color: black; text-align: center; padding-top: 50px;">
+                            正在加载图片..... <br />请等待片刻.....<br />
+                            loading picture..... <br />please waiting.....<br />
+                        </p>
+                    </div>
+                    <div id="introduct">
+                        <!-- <img src="images/demo.jpg" alt="paidaxing" width="280" height="247">  -->
+                        <div id="picDesc1" style="display: block;">
+                            <p style="color: black; text-align: center; font-size: 20px;"> 图1: 金刚石图案的变换</p>
+                            <p style="color: black; text-align: center; font-size: 15px; overflow: auto;"> 
+                                &nbsp;&nbsp;&nbsp;&nbsp;通过控制金刚石的边数和直径，改变金刚石的形状；通过碰撞检测来判断物体是否碰到边界。金刚石图案的绘制使用了双缓冲技术和圆的参数方程，通过圆心的移动，与周围的物体发生检测。
+                            </p>
+                        </div>
+                        <!--第二条讲解-->
+                        <div id="picDesc2" style="display: none;">
+                            <p style="color: black; text-align: center; font-size: 20px;"> 图2: 茶壶环境映射</p>
+                            <p style="color: black; text-align: center; font-size: 15px; overflow: auto;"> 
+                                &nbsp;&nbsp;&nbsp;&nbsp;利用法矢量进行消隐，可以利用什么什么公式，做什么什么事情.....
+                            </p>
+                        </div>
+                        <!--第三条讲解-->
+                        <div id="picDesc3" style="display: none;">
+                            <p style="color: black; text-align: center; font-size: 20px;"> 图3: Beizer曲面绘制过程</p>
+                            <p style="color: black; text-align: center; font-size: 15px; overflow: auto;"> 
+                                &nbsp;&nbsp;&nbsp;&nbsp;利用Beizer可以绘制一条不错的曲线，通过四个点和线性方程，我们可以做出这条不错的曲线。
+                            </p>
+                        </div>
+                        <!--第四条讲解-->
+                        <div id="picDesc4" style="display: none;">
+                            <p style="color: black; text-align: center; font-size: 20px;"> 图4: 双缓冲实例</p>
+                            <p style="color: black; text-align: center; font-size: 15px; overflow: auto;"> 
+                                &nbsp;&nbsp;&nbsp;&nbsp;由于MFC的一些特性，我们可以利用双缓冲技术来消除一些闪烁。
+                            </p>
+                        </div>
+                        <!--第五条讲解-->
+                        <div id="picDesc5" style="display: none;">
+                            <p style="color: black; text-align: center; font-size: 20px;"> 图5: 两个消隐圆环</p>
+                            <p style="color: black; text-align: center; font-size: 15px; overflow: auto;"> 
+                                &nbsp;&nbsp;&nbsp;&nbsp;利用点的法矢量进行消隐，可以利用什么什么公式，做什么什么事情.....
+                            </p>
+                        </div>
+                        <!--第六条讲解-->
+                        <div id="picDesc6" style="display: none;">
+                            <p style="color: black; text-align: center; font-size: 20px;"> 图6: 金刚石旋转图案</p>
+                            <p style="color: black; text-align: center; font-size: 15px; overflow: auto;"> 
+                                &nbsp;&nbsp;&nbsp;&nbsp;利用时间函数？来改变金刚石的起始点来使金刚石旋转。
+                            </p>
+                        </div>
+                        <!--第七条讲解-->
+                        <div id="picDesc7" style="display: none;">
+                            <p style="color: black; text-align: center; font-size: 20px;"> 图7: 圆柱的线框消隐模型</p>
+                            <p style="color: black; text-align: center; font-size: 15px; overflow: auto;"> 
+                                &nbsp;&nbsp;&nbsp;&nbsp;利用法矢量进行消隐，可以利用什么什么公式，做什么什么事情.....
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">    
+            <table>
+                <tr class="STYLE">
+                    <td style="font-weight:bold;color:#8B8F63;font-size:13px; text-align: left;">
+                        <p>CopyRight &copy; 博创研究所  All Rights Reserved<br />
+                            备案编号:晋ICP备09009483号&nbsp;
+                            联系电话：0351-3566027 
+                        </p>
+                    </td>
+                </tr>
+              </table>
+        </div>
+    </body>
+</html>

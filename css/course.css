@@ -1,0 +1,264 @@
+#course_main {
+    margin-left:auto;
+    margin-right:auto;
+    width:1000px;
+    height:600px;
+    visibility: visible;
+}
+
+#member_intro{
+    margin:0px;
+    padding: 0px;
+    float: left;
+    width:1000px;
+    height: 450px;
+    z-index: 0;
+}
+
+#member_bk{
+    margin:0px;
+    padding: 0px;
+    width:1000px;
+    height: 450px;
+    float: left;
+    visibility: visible;
+    z-index: 0;
+}
+
+#member_right{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    z-index: 3;
+    width: 200px;
+    height: 450px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+#class_list{
+    width: 300px;
+    height: 400px;
+    float: left;
+    top: 0%;
+    box-shadow: 5px 5px 10px gray;
+    border-bottom-right-radius: 20px;
+    z-index: 3;
+}
+
+#class_list ol{
+    /* width: 300px;  */
+    height: 400px; 
+    overflow: auto; 
+    margin: 0px;
+    /* padding: 0px; *//*解注它可以将排序消失掉*/
+    text-align: center;
+    padding-left: 18%;
+    scroll-margin-left: 100%;
+}
+
+#class_list ol li:hover dl p,
+#class_list ol li:hover{
+    color: #fc6b00;
+    background-color: gray;
+    border-radius: 10px;
+}
+/* #class_list ol li dl a:hover,
+#class_list ol li dl:hover a{
+    color: #fc6b00;
+} */
+#class_list ol li dl{
+    /* left: 90px; */
+    margin-left: 10%;
+    text-align: left;
+    cursor: pointer;
+}
+#class_list ol li{
+    margin: 0px;
+    padding: 0px;
+    /* width: 288px; */
+    font-size: 1.6em;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+}
+
+#rightdiv_title{
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    height: 30px;
+    padding-top: 10px;
+    color: gray;
+    text-align: center;
+    box-shadow: 5px 5px 10px gray;
+    z-index: 2;
+    font-size: 2em;
+}
+
+#chapter_list{
+    margin: 0px;
+    padding: 0px;
+    padding-top: -5px;
+    width: 300px;
+    height: 360px;
+    float: left;
+    top: 0%;
+    box-shadow: 5px 5px 10px gray;
+    border-bottom-right-radius: 20px;
+    z-index: 3;
+}
+
+#chapter_list ul{
+    width: 300px; 
+    height: 360px; 
+    overflow: auto; 
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    /* padding-left: 18%; */
+    scroll-margin-left: 100%;
+}
+#chapter_list ul li{
+    margin: 0px;
+    padding: 0px;
+    /* width: 100%; */
+    width: 288px;
+    font-size: 1.6em;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+}
+#chapter_list ul li dl{
+    margin: 10px auto;
+    padding: 5px;
+    text-align: left;
+    margin-left: 10%;
+    border-radius: 10px;
+    /* line-height: 15px; */
+    cursor: pointer;
+}
+#chapter_list ul li a{
+    margin: 0px;
+    padding: 3px;
+    text-align: left;
+    margin-left: 20%;
+    /* line-height: 10px; */
+    border-radius: 10px;
+    font-size: 0.8em;
+    font-weight: normal;
+
+    /* white-space:nowrap; *//*解释掉它将溢出时省略*/
+    /* width: 220px; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    cursor: pointer;
+    display: none;
+}
+#teacher_photo{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* padding-right: -20px; */
+    /* padding: 0px 10px 10px 0px; */
+    /* padding-top: 0px;
+    padding-left: 100px; */
+    float: left; 
+    transform: rotate(90deg);
+    border-radius: 10px;
+    box-shadow: 5px -5px 5px #555;
+}
+
+
+/* #chapter_list ul li:hover dt{
+    display: block;
+} */
+
+#chapter_list ul li dl:hover,
+#chapter_list ul li a:hover{
+    background-color: gray;
+    color: #fc6b00;
+}
+
+/* #class_list ol{
+    counter-reset: num 1;
+}
+#class_list ol li{
+    counter-increment: num 1;
+    list-style: none;
+}
+#class_list ol li{
+    content: '第' counter(num) '条：'；
+} */
+.Class_Select{
+    background-color: gray;
+    color: #fc6b00;
+    border-radius: 10px;
+}
+.Class_Org{
+    color: gray;
+    /* background-color: white; */
+}
+
+
+/* 滚动条样式 */
+/*
+ *  参考自：http://www.xuanfengge.com/demo/201311/scroll/css3-scroll.html
+ */
+ #scrool-style::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     border-radius: 10px;
+     background-color: #F5F5F5;
+ }
+ 
+ #scrool-style::-webkit-scrollbar
+ {
+     width: 12px;
+     border-radius: 10px;
+     background-color: #F5F5F5;
+ }
+ 
+ #scrool-style::-webkit-scrollbar-thumb
+ {
+     border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+     background-color: #555;
+ }
+
+ #scrool-style{
+    scrollbar-arrow-color: #F5F5F5; /*三角箭头的颜色*/
+    scrollbar-face-color: black; /*立体滚动条的颜色（包括箭头部分的背景色）*/
+    scrollbar-3dlight-color: #F5F5F5; /*立体滚动条亮边的颜色*/
+    scrollbar-highlight-color: gray; /*滚动条的高亮颜色（左阴影？）*/
+    scrollbar-shadow-color: gray; /*立体滚动条阴影的颜色*/
+    scrollbar-darkshadow-color: gray; /*立体滚动条外阴影的颜色*/
+    scrollbar-track-color: gray; /*立体滚动条背景颜色*/
+    scrollbar-base-color: #F5F5F5; /*滚动条的基色*/
+}
+
+/*
+ *  STYLE 3
+ */
+
+ /* #style-3::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     background-color: #F5F5F5;
+ }
+ 
+ #style-3::-webkit-scrollbar
+ {
+     width: 6px;
+     background-color: #F5F5F5;
+ }
+ 
+ #style-3::-webkit-scrollbar-thumb
+ {
+     background-color: #000000;
+ } */

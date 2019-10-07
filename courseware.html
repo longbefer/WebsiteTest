@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--计算即图形学网站，孔令德-->
+<html>
+    <head>
+        <meta  content="text/html;charset=utf-8" http-equiv="Content-Type" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="计算机图形学,孔令德,精品资源共享课,VC++,MFC,图形学原理,源程序"/>
+        <meta name="description" content="基于MFC研究计算机图形学原理的实现,提供了《计算机图形学基础教程（VC++版）》、《计算机图形学实践教程（VC++版）》、《计算机图形学基础教程（VC++版）习题解答与编程实践》、《计算机图形学实验及课程设计（VC++版）》4本系列教材和300多个源程序。采用类模块：CLine直线类、CFill填充类、CTransform变换类、CPerspective透视类、CZbuffer深度缓冲类、CLightSource光源类、CLighting光照类、CMaterial材质类、CTexture纹理类等，实现真实感图形的绘制。">
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="css/course.css">
+        <link rel="icon" type="image/x-icon" href="images/bc.png" />
+        <title>欢迎访问 孔令德计算机图形学精品资源共享课课程网站</title>
+    </head>
+    <body>
+        <script src="js/ware.js"></script>
+        <script src="js/html5media.min.js"></script><!--由于网络环境改成本地js，网络地址如下-->
+        <!-- <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script> -->
+        <!-- <div style="background-image: url(images/demo1.jpg);  top:100%;left: 100%"></div> -->
+        <div id="main">
+            <div id="nav">
+                <table style="width:1003px;  text-align:center; height:70px; border:0;" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td style="color:white; text-align: left;">
+                                <p style="font-size: 30px; line-height: 7px; padding-left: 50px;">
+                                    计算机几何学
+                                </p>
+                                <p style="font-size: 15px; padding-left: 50px;">
+                                    <a href="http://klingde.com" style="color:white" target="_blank ">孔令德教授</a>
+                                </p>
+                            </td>
+                            <td style="color:white; text-align: right;">
+                                <img src="images/bc2.png" alt="博创" title="博创" style="width: 40px; height: 40px; vertical-align: -50%;">
+                                <p class="rainbow-text" style="font-size: 30px; padding-right: 50px; vertical-align: auto;">
+                                    计算几何慕课建设成果展示
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="menu">
+                <ul style="list-style: none;">
+                    <li>
+                        <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                        <dl>
+                            <dt><a href="index.html">首页</a>
+                            </dt>
+                            <span class="STYLE">
+                                <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                            </span>
+                        </dl>
+                    </li>
+                    <li>
+                        <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                        <dl>
+                            <dt><a href="course.html">课程介绍</a>
+                                <!-- <dd>&nbsp;</dd>
+                                <dd>&nbsp;</dd> -->
+                            </dt>
+                        </dl>
+                        <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                    </li>
+                    <li>
+                        <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                        <dl>
+                            <dt>
+                                <a href="micro class.html">微课视频</a>
+                            </dt>
+                        </dl>
+                        <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                    </li>
+                    <li class="HomePage">
+                        <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                        <dl>
+                            <dt><a style="color: rgb(7,104,202);" href="courseware.html">章节课件</a></dt>
+                        </dl>
+                        <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                    </li>
+                    <li>
+                        <span class="STYLE">
+                            <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                         </span>
+                        <dl>
+                            <dt>
+                                <a href="member.html">成员介绍</a>
+                            </dt>
+                        </dl>
+                                    <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                    </li>
+                </ul>
+            </div>
+            <div id="banner-box">
+                <div id="banner">
+                    <video id="course_ware_video" src="video/course_ware_3D.mp4" width="700" height="400" autoplay loop controls controlsList="none" poster="images/course_ware_3D_Moment.jpg" type="video/mp4" style="border-bottom-left-radius: 20px; box-shadow: 5px 5px 10px gray;">
+                        <p style="color: red; font-size: 30px; text-align: center;">非常抱歉，你的浏览器不支持视频播放，请使用Chrome或者Firefox浏览器。<br />若你使用IE浏览器，请确保允许此网页访问计算机脚本并安装了flash插件。</p> 
+                    </video>
+                </div>
+                <div id="rightdiv">
+                    <p id="rightdiv_title">资源下载</p>
+                    <div id="chapter_list">
+                        <ul id="scrool-style">
+                            <li id="chapter_name1">
+                                <dl onclick="Select(0,event)">▶ 第一章</dl>
+                            </li>
+                            <li id="chapter_name2">
+                                <dl onclick="Select(1,event)">▶ 第二章</dl>
+                            </li>
+                            <li id="chapter_name3">
+                                <dl onclick="Select(2,event)">▶ 第三章</dl>
+                            </li>
+                            <li id="chapter_name4">
+                                <dl onclick="Select(3,event)">▶ 第四章</dl>
+                            </li>
+                            <li id="chapter_name5">
+                                <dl onclick="Select(4,event)">▶ 第五章</dl>
+                            </li>
+                            <li id="chapter_name6">
+                                <dl onclick="Select(5,event)">▶ 第六章</dl>
+                            </li>
+                        </ul>
+                        <!-- <p  style="text-align: center;">非常抱歉，这是一个互动视频，请升级到最新版本或到网页版观看</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">    
+            <table>
+                <tr class="STYLE">
+                    <td style="font-weight:bold;color:#8B8F63;font-size:13px; text-align: left;">
+                        <p>CopyRight &copy; 博创研究所  All Rights Reserved<br />
+                            备案编号:晋ICP备09009483号&nbsp;
+                            联系电话：0351-3566027 
+                        </p>
+                    </td>
+                </tr>
+              </table>
+        </div>
+    </body>
+</html>

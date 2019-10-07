@@ -1,0 +1,387 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width: 1600px) {
+    html{font-size: 60px;}
+}
+@media screen and (max-width: 1200px) {
+    html{font-size: 30px;}
+}
+@media screen and (max-width: 800px) {
+    html{font-size: 16px;}
+}
+@media screen and (max-width: 600px) {
+    html{font-size: 12px;}
+}
+
+/* 以下链接在某些时刻的颜色和是否需要下划线 */
+A:link {
+	COLOR:#8B8F63; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #8B8F63; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: red; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #fc6b00; TEXT-DECORATION: none
+}
+
+
+.STYLE {
+    font-family: "楷体"
+}
+
+body{
+    margin:0px;
+    padding:30px 0px 0px 0px;
+    background-color: #FBFAF0;
+    font-family: "楷体";
+    font-size: 12px;
+    -webkit-text-size-adjust : 100% ;
+    -moz-text-size-adjust : 100% ;     
+    -ms-text-size-adjust : 100% ;  
+    text-size-adjust : 100%;
+}
+
+#main {
+    margin-left:auto;
+    margin-right:auto;
+    width:1000px;
+    height:550px;
+    visibility: visible;
+}
+
+#nav{
+    margin-left:auto;/*居中了*/
+    margin-right:auto;
+    /* border-radius:100px; */
+	width:1000px;
+    height:100px;
+    background: rgb(7,104,202);
+    /* font-family: "黑体"; */
+    /* background: linear-gradient(rgb(84, 199, 214),rgb(7,104,202)); */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow:5px 5px 10px gray;
+    visibility: visible;	
+}
+
+#menu{
+    margin:0px;
+    padding: 0px;
+    /* margin-top: -15px; */
+    /* float: left;解决两个div中的间隙，上面的那个也可以，但是有问题 */
+    /* margin-left: 50px; */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(7,104,202);
+    width: 1000px;
+    height: 40px;
+    box-shadow:5px 5px 10px gray;
+    position: relative;
+    z-index: 1;
+    /* border:none; */
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
+#menu ul{ 
+    /* margin-top: 0px; */
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    /* float: left; */
+    list-style:none;
+    /* height:40px; */
+}
+#menu ul table{ border-collapse:collapse;}/*for_ie6*/
+#menu ul li{ 
+    /* margin-top: 0px; */
+    margin: 0px;
+    padding: 0px;
+    width:130px;
+    height: 40px;
+    /* *width:110px; */
+    float:left;
+    margin:0 1px 0 0;
+}
+
+#menu ul li dl{ 
+    width:120px;
+    height: 20px;
+    font-size: 10px;
+    /* *width:110px; */
+}
+
+#menu ul li dl dt{ 
+    text-align:center;
+}
+
+#menu ul li dl:hover dd,#menu li a:hover dd{ 
+    display:block;
+}
+
+#menu ul li:hover, 
+#menu li a:hover { border:0;}/*for_ie6*/
+
+#menu ul li dl dt a{ /*这个是菜单栏的布局-文字*/
+    font-size:20px;
+	font-weight:600;
+	color:white;
+	text-decoration:none;	
+    font-family:"楷体";
+    overflow: hidden;
+}
+
+#menu ul li dl dt:hover a, 
+#menu ul li dl dt:hover{/*鼠标到菜单栏文本时，文本的颜色*/
+    color: rgb(7,104,202);
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#menu li dl dd {/*这个是展开的布局*/
+    /* border:none;
+    border-radius: 10px; */
+    margin:0px;
+    padding:0px;
+    background-color: white;
+    float:center;
+    display:none;
+    margin-inline-start: auto;
+    position:relative;/*悬浮于之上*/
+}
+
+#menu li dl dd a{ /*这个是展开的布局--文字*/
+    margin:0px;
+    padding:0px;
+    display:block;
+    font-size:18px;
+    /* font-weight:300; */
+    color: rgb(7,104,202);
+    text-align:center;
+    position:relative;/*悬浮于之上*/
+    /* text-decoration:none; */
+    font-family:"楷体";
+    overflow: hidden;
+    height:30px;
+}
+
+#menu li dl dd a:hover, 
+#menu li dl dd:hover{
+    color: white;
+    background-color: rgb(7,104,202);
+}
+
+#menu li dl dd.first{
+    margin:0px;
+    /* padding:10px; */
+    padding-block-start: 10px;
+	/* border-top:solid 1px; */
+} 
+
+#menu li dl dd.first:hover a, 
+#menu li dl dd.first:hover{
+    color: white;
+    background-color: rgb(7,104,202);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#menu li dl dd.last{
+    /* border:none; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* border-radius: 10px; */
+    /* border-end-start-radius: 10px; */
+    /* border-end-end-radius: 10px;  */
+}
+
+#menu li dl dd.last a:hover, 
+#menu li dl dd.last:hover{
+    color: white;
+    background-color: rgb(7,104,202);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+#banner-box{
+    margin:0px;
+    padding: 0px;
+    /* float: left; */
+    /* margin-top: 15px; */
+    /* margin-left: 50px; */
+    width: 1000px;
+    height: 400px;
+    z-index: 0;
+}
+
+#banner{
+    margin:0px;
+    padding: 0px;
+    width: 700px;
+    height: 400px;
+    float: left;
+    /* font-size: 0; */
+    /* margin-left: 30px; */
+    /* margin-top: -5px; */
+    /* background-color: #142546; */
+    /* border-radius: 20px; */
+    /* border-bottom-right-radius: 20px; */
+    /* border: none; */
+    /* box-shadow:5px 5px 10px gray; */
+    /* scrollbar-shadow-color: gray; */
+    visibility: visible;
+}
+
+#rightdiv{
+    margin:0px;
+    padding:0px;
+    width: 300px;
+    height: 400px;
+    float: left;
+    /* margin-left: 30px; */
+    /* margin-top: 15px; */
+    /* border-radius: 20px; */
+    /* background-color: #009996; */
+    /* box-shadow:5px 5px 10px gray; */
+    visibility: visible;
+    /* position: absolute; */
+    /* right: 0; */
+}
+
+#picture{
+    margin:0px;
+    padding:0px;
+    width: 300px;
+    height: 200px;
+    float: left;
+    position: relative;
+    /* margin-left: 30px; */
+    /* margin-top: 15px; */
+    /* border-radius: 20px; */
+    /* background-color: #009996; */
+    /* background-color: #FBFAF0; */
+    overflow: hidden;
+    background-color: white;
+    box-shadow:5px 5px 10px gray;
+    visibility: visible;
+    /* position: absolute; */
+    /* right: 0; */
+    z-index: 2;
+}
+
+#indicator{
+    width: 300px;
+    height: 25px;
+    bottom: 0%;
+    margin-left: 10%;
+    position: absolute;
+    z-index: 4;
+    
+}
+
+#indicator ul{
+    /* margin-left: 20%; */
+    list-style: none;
+    height: 10px;
+    /* z-index: 4; */
+    /* left: 25%; */
+}
+
+#indicator ul li{
+    list-style: circle;
+    padding: 5px 15px;
+    line-height: 0px;
+    float: left;
+    /* background-color: rgba(255,255,255,100); */
+    color: gray;
+    /* z-index: 5; */
+}
+
+#indicator ul li:hover{
+    color:red;
+}
+
+
+
+#introduct{
+    margin:0px;
+    padding:0px;
+    width: 300px;
+    height: 200px;
+    float: left;
+    position: relative;
+    /* float: right; */
+    /* position: absolute; */
+    /* margin-left: 30px; */
+    /* border-radius: 20px; */
+    overflow: hidden;
+    border-bottom-right-radius: 20px;
+    box-shadow:5px 5px 10px gray;
+    background-color: white;
+    visibility: visible;
+    z-index: 3;
+}
+
+#footer{
+    margin:0px;
+    padding:0px;
+    float: center;
+    /* position: absolute; */
+    /* left: 0; */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /* right: 0%; */
+    width: 1000px;
+    height: 50px;
+    visibility: visible;
+    text-align: center;
+    /* align-self: center; */
+}
+
+/* #HtmlPage dl dt a{
+    color: rgb(7,104,202);
+    background-color: white;
+} */
+.HomePage{
+    color: rgb(7,104,202);
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/* .HtmlPage dl{
+    color: rgb(7,104,202);
+} */
+/* #HtmlPage{
+    color: rgb(7,104,202);
+} */
+
+
+
+/*以下参考来自： https://github.com/raxxarr/note/issues/1 */
+@keyframes hue {
+    from {
+       filter: hue-rotate(0);
+    }
+ 
+    to {
+       filter: hue-rotate(-360deg);
+    }
+ }
+.rainbow-text {
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+    font-size: 100px;
+    color: transparent;
+    animation: hue 1.5s linear infinite;
+    background-image: linear-gradient(to right , rgb(255,0,0), rgb(255,128,0), rgb(255,255,0), rgb(0,255,0), rgb(0,255,128), rgb(0,255,255), rgb(0,128,255), rgb(0,0,255), rgb(128,0,255), rgb(255,0,255), rgb(255,0,128));
+    -webkit-background-clip: text;
+ }

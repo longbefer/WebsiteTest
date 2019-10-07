@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--计算即图形学网站，孔令德-->
+<html>
+    <head>
+        <meta  content="text/html;charset=utf-8" http-equiv="Content-Type" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="计算机图形学,孔令德,精品资源共享课,VC++,MFC,图形学原理,源程序"/>
+        <meta name="description" content="基于MFC研究计算机图形学原理的实现,提供了《计算机图形学基础教程（VC++版）》、《计算机图形学实践教程（VC++版）》、《计算机图形学基础教程（VC++版）习题解答与编程实践》、《计算机图形学实验及课程设计（VC++版）》4本系列教材和300多个源程序。采用类模块：CLine直线类、CFill填充类、CTransform变换类、CPerspective透视类、CZbuffer深度缓冲类、CLightSource光源类、CLighting光照类、CMaterial材质类、CTexture纹理类等，实现真实感图形的绘制。">
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="css/course.css">
+        <link rel="icon" type="image/x-icon" href="images/bc.png" />
+        <title>欢迎访问 孔令德计算机图形学精品资源共享课课程网站</title>
+    </head>
+    <body>
+        <!-- <script src="js/main.js"></script> -->
+        <script src="js/course.js"></script>
+        <script src="js/html5media.min.js"></script><!--由于网络环境改成本地js，网络地址如下-->
+        <!-- <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script> -->
+        <!-- <div style="background-image: url(images/demo1.jpg);  top:100%;left: 100%"></div> -->
+        <div id="main">
+            <div id="nav">
+                <table style="width:1003px;  text-align:center; height:70px; border:0;" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td style="color:white; text-align: left;">
+                                <p style="font-size: 30px; line-height: 7px; padding-left: 50px;">
+                                    计算机几何学
+                                </p>
+                                <p style="font-size: 15px; padding-left: 50px;">
+                                    <a href="http://klingde.com" style="color:white" target="_blank ">孔令德教授</a>
+                                </p>
+                            </td>
+                            <td style="color:white; text-align: right;">
+                                <img src="images/bc2.png" alt="博创" title="博创" style="width: 40px; height: 40px; vertical-align: -50%;">
+                                <p class="rainbow-text" style="font-size: 30px; padding-right: 50px; vertical-align: auto;">
+                                    计算几何慕课建设成果展示
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="menu">
+                <ul style="list-style: none;">
+                    <li>
+                        <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                        <dl>
+                            <dt><a href="index.html">首页</a>
+                            </dt>
+                            <span class="STYLE">
+                                <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                            </span>
+                        </dl>
+                    </li>
+                    <li>
+                        <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                        <dl>
+                            <dt><a href="course.html">课程介绍</a>
+                                <!-- <dd>&nbsp;</dd>
+                                <dd>&nbsp;</dd> -->
+                            </dt>
+                        </dl>
+                        <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                    </li>
+                    <li class="HomePage">
+                        <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                        <dl>
+                            <dt>
+                                <a style="color: rgb(7,104,202);" href="micro class.html">微课视频</a>
+                            </dt>
+                        </dl>
+                        <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                    </li>
+                    <li>
+                        <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                        <dl>
+                            <dt><a href="courseware.html">章节课件</a></dt>
+                        </dl>
+                        <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                    </li>
+                    <li>
+                        <span class="STYLE">
+                            <!--[if lte ie 6]> <a href="#"><table><tr><td> <![endif]-->
+                         </span>
+                        <dl>
+                            <dt>
+                                <a href="member.html">成员介绍</a>
+                            </dt>
+                        </dl>
+                                    <!--[if lte ie 6]> </td></tr></table></a> <![endif]-->
+                    </li>
+                </ul>
+            </div>
+            <div id="banner-box">
+                <div id="banner">
+                    <video id="micro_class_video" src="video/*.mp4" width="700" height="400" autoplay loop controls controlsList="none" preload poster="images/novideo.png" type="video/mp4" style="border-bottom-left-radius: 20px; box-shadow: 5px 5px 10px gray;">
+                        <!-- <source id="micro_class_sources" src="video/*.mp4" > -->
+                            <p style="color: red; font-size: 30px; text-align: center;">非常抱歉，你的浏览器不支持视频播放，请使用Chrome或者Firefox浏览器。<br />若你使用IE浏览器，请确保允许此网页访问计算机脚本并安装了flash插件。</p> 
+                    </video>
+                </div>
+                <div id="rightdiv">
+                    <div id="class_list">
+                        <ol id="scrool-style">
+                            <li onclick="Select(1)">
+                                <dl>
+                                    <p>新建Test工程</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(2)">
+                                <dl>
+                                    <p>鼠标绘制直线</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(3)">
+                                <dl>
+                                    <p>Bezier曲线曲面简介</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(4)">
+                                <dl>
+                                    <p>Bezier曲线定义算法</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(5)">
+                                <dl>
+                                    <p>Bezier曲线deCasteljau算法</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(6)">
+                                <dl>
+                                    <p>三次曲线基函数算法</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(7)">
+                                <dl>
+                                    <p>三次Bezier曲线deCasteljau算法☆</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(8)">
+                                <dl>
+                                    <p>三维变换</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(9)">
+                                <dl>
+                                    <p>投影变换</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(10)">
+                                <dl>
+                                    <p>三次Bezier曲线拼接圆算法☆</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(11)">
+                                <dl>
+                                    <p>三次Bezier曲线拼接圆算法☆</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(12)">
+                                <dl>
+                                    <p>三次Bezier曲面拼接圆柱面算法</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(13)">
+                                <dl>
+                                    <p>双三次Bezier曲面拼接球面算法</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(14)">
+                                <dl>
+                                    <p>双三次Bezier曲面拼接Utah茶壶算法</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(15)">
+                                <dl>
+                                    <p>二次有理Bezier曲线算法</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(16)">
+                                <dl>
+                                    <p>二次有理Bezier曲线拼接圆算法</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(17)">
+                                <dl>
+                                    <p>二次有理Bezier曲面算法</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(18)">
+                                <dl>
+                                    <p>二次有理Bezier拼接球算法</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(19)">
+                                <dl>
+                                    <p>三次均匀B样条曲线</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(20)">
+                                <dl>
+                                    <p>双三次均匀B样条曲面</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(21)">
+                                <dl>
+                                    <p>双三次均匀B样条曲面拼接球</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(22)">
+                                <dl>
+                                    <p>三次非均匀B样条曲线</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(23)">
+                                <dl>
+                                    <p>NURBS曲线</p>
+                                </dl>
+                            </li>
+                            <li onclick="Select(24)">
+                                <dl>
+                                    <p>NURBS曲面</p>
+                                </dl>
+                            </li>
+                        </ol>
+                        <!-- <p style="text-align: center;">非常抱歉，这是一个互动视频，请升级到最新版本或到网页版观看</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">    
+            <table>
+                <tr class="STYLE">
+                    <td style="font-weight:bold;color:#8B8F63;font-size:13px; text-align: left;">
+                        <p>CopyRight &copy; 博创研究所  All Rights Reserved<br />
+                            备案编号:晋ICP备09009483号&nbsp;
+                            联系电话：0351-3566027 
+                        </p>
+                    </td>
+                </tr>
+              </table>
+        </div>
+    </body>
+</html>
