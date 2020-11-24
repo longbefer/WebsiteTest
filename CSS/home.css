@@ -1,0 +1,669 @@
+.left{
+	width: 614px;
+	margin-right: 28px;
+}
+.right{
+	width: 293px;
+	height: 642px;
+	position: fixed;
+	top: 88px;
+	left: 798.5px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.newly{
+	height: 118px;
+	margin-bottom: 24px;
+	background-color: #fff;
+}
+.newly>a{
+	display: inline-block;
+	height: 118px;
+	padding: 0 4px;
+}
+.newly>a:nth-child(1){
+	margin-left: 10px;
+}
+.newly-person{
+	margin-top: 18px;
+}
+.newly-person>p{
+	display: block;
+	width: 66px;
+	overflow: hidden;
+	text-align: center;
+	color: #262626;
+	font-size: 12px;
+}
+.newly-person-portrait{
+	position: relative;
+	width: 66px;
+	height: 66px;
+	background-image: url(../Resource/image/inco-ins.png);
+	background-repeat: no-repeat;
+	background-position: -66px -228px;
+	background-size: 450px;
+	margin-bottom: 4px;
+}
+.newly-person-portrait>img{
+	width: 56px;
+	height: 56px;
+	border: 2px solid rgba(1,1,1,0);
+	border-radius: 50%;
+	position: absolute;
+	top: 3px;
+	left: 3.5px;
+}
+
+.articles{
+	margin-left: -1px;
+	margin-right: -1px;
+}
+
+article{
+	width: 616px;
+	/* height: 1089.5px; */
+	margin-bottom: 60px;
+	border-radius: 3px;
+	border: 1px solid #DBDBDB;
+	position: relative;
+	vertical-align: baseline;
+	background-color: #FFFFFF;
+}
+
+.header{
+	height: 28px;
+	padding: 16px;
+	line-height: 28px;
+}
+
+.user_detail{
+	margin-top: -4px;
+}
+.user_name{
+	margin-left: 14px;
+}
+
+.user_name>a{
+	color: #262626;
+	font-size: 14px;
+	display: block;
+	line-height: 18px;
+}
+.more>span{
+	cursor: pointer;
+}
+.more>span:hover{
+	font-weight: bold;
+}
+
+.user_name>a:nth-child(2){
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 3px;
+}
+.user_portrait{
+	background-image: url(../Resource/image/inco-ins.png);
+	background-repeat: no-repeat;
+	background-position: -40px -139px;
+	background-size: 275px;
+	width: 41px;
+	height: 41px;
+}
+.user_portrait>a{
+	display: block;
+	width: 41px;
+	height: 41px;
+	position: relative;
+}
+.user_portrait img{
+	width: 32px;
+	height: 32px;
+	border: 2px solid rgba(1,1,1,0);
+	border-radius: 50%;
+	position: absolute;
+	top: 2.5px;
+	left: 2.5px;
+}
+
+.picture{
+	width: 616px;
+	/* height: 767.5; */
+	overflow: hidden; 
+}
+
+.picture>img{
+	width: 616px;
+	transition: transform 2s ease-in-out;
+}
+.picture:hover>img{
+	width: 616px;
+	transform: scale(1.05);
+}
+
+.comment>div{
+	padding: 0 16px;
+}
+.function-panel{
+	margin-top: 4px;
+}
+.function-panel>div{
+	display: inline-block;
+	padding: 8px;
+}
+.function-panel>div>a>img{
+	width: 24px;
+	height: 24px;
+}
+.likes-times{
+	font-size: 14px;
+	font-weight: bold;
+	color: #262626;
+	margin-bottom: 8px;
+}
+.introduct{
+	margin-bottom: 4px;
+	color: #262626;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.more-content>span{
+	color: #8E8E8E;
+}
+.introduct>span{
+	/* font-weight: bold; */
+	font-weight: 600;
+}
+.at{
+	color: #262626;
+}
+.at>span,.at:visited>span{
+	font-size: 14px;
+	color: #00376B;
+}
+.all-comment{
+	margin-bottom: 4px;
+	font-size: 14px;
+	color: #8E8E8E;
+}
+.all-comment>a,.all-comment>a:visited{
+	color: #8E8E8E;
+	cursor: pointer;
+}
+.comment-user-name{
+	font-weight: 600;
+	cursor: pointer;
+}
+.comments-list{
+	margin-bottom: 4px;
+	color: #262626;
+	font-size: 14px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.comments-list img{
+	width: 12px;
+	height: 12px;
+	float: right;
+	filter:grayscale(80%);
+	cursor: pointer;
+}
+.post-date{
+	height: 20px;
+	color: #8E8E8E;
+	font-size: 10px;
+	line-height: 20px;
+	margin-bottom: 4px;
+}
+.post-comment{
+	border-top: 1px solid #EFEFEF;
+	margin-top: 4px;
+	position: relative;
+	height: 56px;
+}
+.comment-text{
+	padding: 0 16px;
+	margin-top: 18px;
+}
+.comment-form{
+	/* width: 582px; */
+	height: 18px;
+}
+.add-comment{
+	width: 550px;
+	height: 18px;
+	color: #262626;
+	line-height: 18px;
+	font-size: inherit;
+	font-weight: 400;
+	border: 0px solid #FFFFFF;
+	outline: 0px solid rgba(0,0,0,0);
+	resize: none;
+	vertical-align:middle;
+}
+.post{
+	width: 28px;
+	height: 18px;
+	opacity: 0.3;
+	border: 0;
+	color: #0095f6;
+	display: inline;
+	padding: 0;
+	position: relative;
+	font: 400 13.3333px Arial;
+	background: 0 0;
+}
+
+.recommend1{
+	position: relative;
+	padding: 20px 0;
+	width: 616px;
+	height: 240px;
+	margin-bottom: 60px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+.recommend-text{
+	width: 566px;
+	height: 18px;
+	margin-bottom: 12px;
+	margin-left: 24px;
+	margin-right: 24px;
+	color: #8E8E8E;
+	font-weight: 600;
+}
+.recommend-text>div:nth-child(2)>a,
+.recommend-text>div:nth-child(2)>a:visited{
+	color: #0095F6;
+}
+.recommend-card{
+	width: 200px;
+	height: 208px;
+	/* 弹性布局，使得子div位于父div中间（也可以使用绝对布局等） */
+	display: flex;
+	justify-content: center;/*内容水平居中*/
+	align-items: center; /*内容垂直居中*/
+	animation: card_move 3s ease-in-out;
+}
+@keyframes card_move{
+	from{
+		transform: translate(-1300px,0px);
+	}
+	to{
+		transform: translate(0px,0px);
+	}
+}
+.recommend1>div:nth-child(2){
+	margin-left: 12px;
+}
+.recommend-info{
+	width: 134px;
+	height: 168px;
+	padding: 20px;
+	position: relative;
+}
+.close-recommend{
+	position: absolute;
+	width: 34px;
+	height: 34px;
+	top: 0;
+	right: 0;
+}
+.close-recommend>div{
+	width: 10px;
+	height: 10px;
+	margin: 12px;
+	background-image: url(../Resource/image/inco-ins.png);
+	background-repeat: no-repeat;
+	background-position: -428px -230px;
+	background-size: 440px 411px;
+}
+.recommend-friend-portrait{
+	margin-bottom: 20px;
+}
+.recommend-friend-portrait>a{
+	display: block;
+	text-align: center;
+}
+.recommend-friend-portrait>a>img{
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+}
+.recommend-friend-name{
+	font-size: 14px;
+	color: #262626;
+	text-align: center;
+	width: 134px;
+	height: 18px;
+	margin-bottom: 4px;
+	font-weight: 600;
+}
+.recommend-friend-from{
+	width: 134px;
+	height: 28px;
+	font-size: 12px;
+	color: #8E8E8E;
+	margin-bottom: 12px;
+	text-align: center;
+}
+.recommend-friend-name>a:visited{
+	color: #262626;
+}
+.follow{
+	width: 134px;
+	height: 30px;
+	background-color: #0095F6;
+	font-size: 14px;
+	color: #FFFFFF;
+	border-radius: 4px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 600;
+}
+.follow:hover>a{
+	background-color: #006fb4;
+	border-radius: 4px;
+}
+.follow>a,.follow>a:visited{
+	display: block;
+	color: #FFFFFF;
+}
+.recommend-next{
+	cursor: pointer;
+	transform: scaleX(-1);
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 145px;
+	right: 10px;
+	background-size: 440px 411px;
+	background-position: -402px -207px;
+	background-repeat: no-repeat;
+	background-image: url(../Resource/image/inco-ins.png);
+}
+.recommend-previous{
+	display: none;/*消除此按钮*/
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 145px;
+	left: 10px;
+	background-size: 440px 411px;
+	background-position: -402px -207px;
+	background-repeat: no-repeat;
+	background-image: url(../Resource/image/inco-ins.png);
+}
+
+.person_info{
+	margin-bottom: 10px;
+	margin-top: 18px;
+	margin-left: 16px;
+}
+.person-portrait>img{
+	width: 56px;
+	height: 56px;
+	border: 2px solid #DBDBDB;
+	border-radius: 50%;
+}
+.person-name{
+	height: 60px;
+	margin-left: 20px;
+	font-size: 14px;
+	color: #262626;
+	padding-top: 10px;
+}
+.person-name>p:nth-child(1){
+	margin-bottom: 2px;
+	font-weight: 600;
+}
+.person-name>p:nth-child(2){
+	font-size: 12px;
+	color: #8E8E8E;
+}
+.recommend{
+	margin-bottom: 12px;
+	padding-bottom: 8px;
+}
+.recommend-text-s{
+	font-size: 14px;
+	color: #8E8E8E;
+	font-weight: 600;
+	padding: 4px 16px;
+}
+.recommend-text-s>div>a
+,.recommend-text-s>div:hover>a{
+	display: block;
+	color: #262626;
+	font-size: 12px;
+}
+.user-info{
+	padding: 8px 16px;
+}
+.user-info>.user_detail>.user_portrait{
+	background-image: unset;
+}
+.user-info>.user_detail>.user_portrait img{
+	border: 1px solid #DBDBDB;
+}
+.user-info>.user_detail>.user_name{
+	margin-left: 12px;
+}
+.user-info>.user_detail>.user_name>a:nth-child(1){
+	font-weight: 600;
+}
+.user-info>.user_detail>.user_name>a:nth-child(2){
+	color: #8E8E8E;
+}
+.follow-s{
+	height: 41px;
+	font-size: 12px;
+	font-weight: 600;
+	text-align: center;
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+.follow-s>a,.follow-s>a:hover{
+	display: block;
+	color: #0095F6;
+}
+footer{
+	color: #C7C7C7;
+	font-size: 11px;
+}
+
+.setting{
+	margin-bottom: 16px;
+	margin-left: 16px;
+}
+.setting>li{
+	display: inline-block;
+}
+.setting>li:not(:last-of-type)::after{
+	content: '\00B7';
+	margin: 0.25em 0.25em;
+}
+.setting>li>a:visited{
+	color: #C7C7C7;
+}
+footer>span{
+	margin-left: 16px;
+}
+/* .copyright{
+	color: #C7C7C7;
+	font-size: 11px;
+} */
+
+/* 弹起预览菜单项目 */
+.display-info{
+	overflow: hidden;
+}
+.display-info>img{
+	display: none;
+}
+
+.buttom-opt{
+	width: 850px;
+	height: 600px;
+	margin: 10px auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.buttom-opt>img{
+	width: 480px;
+}
+.comment_preview{
+	width: 335px;
+	height: 600px;
+	background-color: #FFFFFF;
+}
+
+/* 弹出评论头部 */
+.user_detail1{
+	padding: 16px;
+	border-bottom: 1px solid #DBDBDB;
+}
+.user_portrait1{
+	width: 41px;
+	height: 41px;
+}
+.user_portrait1>a{
+	display: block;
+	width: 41px;
+	height: 41px;
+	position: relative;
+}
+.user_portrait1 img{
+	width: 32px;
+	height: 32px;
+	border: 2px solid rgba(1,1,1,0);
+	border-radius: 50%;
+	position: absolute;
+	top: 2.5px;
+	left: 2.5px;
+}
+.user_name1{
+	margin-left: 5px;
+}
+.user_name1>a>span,.user_name1>a:visited>span{
+	color: #262626;
+}
+.user_name1>a:nth-child(2)>span{
+	color: #0095F6;
+	font-weight: 600;
+}
+.user_name1>a:nth-child(3){
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 3px;
+	text-align: left;
+}
+.user_name1>a:nth-child(3),
+.user_name1>a:nth-child(3):visited{
+	color: #262626;
+}
+/* 评论区 */
+.picture_reply>ul{
+	width: 100%;
+	height: 373px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.picture_reply>ul>li{
+	padding: 16px;
+	text-align: left;
+}
+.picture_reply>ul>li>.post-date{
+	padding-left: 45px;
+}
+.picture_reply>ul>li>div>img{
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+}
+.reply_protrait{
+	width: 42px;
+}
+.reply_text{
+	width: 230px;
+	height: 100%;
+	text-align: left;
+	margin-left: 5px;
+	font-size: 12px;
+	user-select: all;
+}
+/* 评论区功能 */
+.comment1>div{
+	padding: 0 16px;
+	text-align: left;
+}
+.function-panel1{
+	margin-top: 4px;
+}
+.function-panel1>div{
+	display: inline-block;
+	padding: 8px;
+}
+.function-panel1>div:nth-child(1){
+	padding-left: 0px;
+}
+.function-panel1>div:nth-last-child(1){
+	padding-left: 0px;
+}
+.function-panel1>div>a>img{
+	width: 24px;
+	height: 24px;
+}
+.likes-times1{
+	font-size: 14px;
+	font-weight: bold;
+	color: #262626;
+	margin-bottom: 8px;
+}
+.post-date1{
+	height: 20px;
+	color: #8E8E8E;
+	font-size: 10px;
+	line-height: 20px;
+	margin-bottom: 4px;
+}
+.post-comment1{
+	border-top: 1px solid #EFEFEF;
+	margin-top: 4px;
+	position: relative;
+	height: 56px;
+}
+.comment-text1{
+	padding: 0 16px;
+	margin-top: 18px;
+}
+.comment-form1{
+	/* width: 582px; */
+	height: 18px;
+}
+.add-comment1{
+	width: 270px;
+	height: 18px;
+	color: #262626;
+	line-height: 18px;
+	font-size: inherit;
+	font-weight: 400;
+	border: 0px solid #FFFFFF;
+	outline: 0px solid rgba(0,0,0,0);
+	resize: none;
+	vertical-align:middle;
+}
+.post1{
+	width: 28px;
+	height: 18px;
+	opacity: 0.3;
+	border: 0;
+	color: #0095f6;
+	display: inline;
+	padding: 0;
+	position: relative;
+	font: 400 13.3333px Arial;
+	background: 0 0;
+}

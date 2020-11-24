@@ -1,0 +1,292 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+img{
+	vertical-align: bottom;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix::before,.clearfix::after{
+	display: table;
+	content: "";
+}
+.clearfix::after{
+	clear: both;
+}
+header{
+	border-bottom: 1px solid #dbdbdb;
+	/*rgba(219,219,219,1)*/
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	background-color: #fff;
+}
+.shadow{
+	/* box-shadow: 1px 1px 1px 2px black; */
+	border: 1px solid #dbdbdb;
+}
+.w{
+	width: 975px;
+	margin: 0 auto;
+}
+.bar_title{
+	height: 54px;
+	padding: 0 20px;
+}
+.bd{
+	border: 1px solid red;
+}
+.logo{
+	width: 360px;
+	height: 36px;
+	margin-top: 16px;
+}
+.logo a{
+	display: block;
+}
+.logo img{
+	width: 103px;
+	height: 29px;
+}
+.search{
+	width: 215px;
+	height: 28px;
+	margin-top: 13px;
+	position: relative;
+}
+.search_box>input{
+	width: 215px;
+	height: 28px;
+	border: 1px solid #dbdbdb;
+	background-color: #FAFAFA;
+	border-radius: 3px;
+}
+.search_box{
+	width: 215px;
+	height: 28px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+.search_box>input:focus{
+	outline: 1px solid #dbdbdb;
+}
+.search_context{
+	width: 215px;
+	height: 28px;
+}
+.search_context>span{
+	color: #8E8E8E;
+	z-index: 2;
+	position: absolute;
+	/* top: 15%; */
+	left: 35%;
+	font-size: 14px;
+	line-height: 28px;
+}
+.search_context>span:nth-child(2){
+	padding-left: 20px;
+	padding-top: -30px;
+}
+.function{
+	/* width: 222px; */
+	height: 22px;
+	margin-top: 16px;
+	padding-left: 24px;
+}
+.function>div{
+	margin-left: 22px;
+	width: 22px;
+	height: 22px;
+	/* border: 1px solid blue; */
+}
+.function>div:nth-child(1){
+	margin-left: 0px;
+}
+.function>div>a>img{
+	width: 22px;
+	height: 22px;
+}
+.favorite{
+	position: relative;
+}
+.float-box{
+	display: none;
+}
+.float-love{
+	width: 400px;
+	/* height: 100px; */
+	position: absolute;
+	top: 40px;
+	left: -350px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 2px 0px gray;
+	border-radius: 5px;
+	overflow: hidden;
+	/* z-index: 2; */
+}
+.message{
+	position: relative;
+	padding: 12px;
+	cursor: pointer;
+}
+.message:hover{
+	background-color: rgba(122,122,122,0.3);
+}
+.tip{
+	width: 34px;
+	height: 34px;
+	background-color: #ed4956;
+	border-radius: 50%;
+	line-height: 34px;
+	text-align: center;
+	color: white;
+	font-weight: 600;
+}
+.information{
+	margin-left: 12px;
+	font-size: 12px;
+	color: #8E8E8E;
+}
+.sow{
+	width: 5px;
+	height: 5px;
+	/* background-color: #8E8E8E; */
+	border: 2px solid #8E8E8E;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.information>p{
+	font-size: 14px;
+	color: #262626;
+	font-weight: 600;
+}
+.love-sow{
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	box-shadow: 1px 1px 1px 0px gray;
+	/* border: 1px solid #8E8E8E; */
+	/* border-bottom-color: transparent; */
+	/* border-left-color: transparent; */
+	transform: rotate(225deg);
+	position: absolute;
+	top: 35px;
+	right: 5px;
+	z-index: 1;
+}
+.function>div:nth-child(1)>a:hover>img{
+	animation: shiver 0.5s ease-in;
+}
+.function>div:nth-child(2)>a:hover>img{
+	animation: fly 1s ease-in;
+}
+.function>div:nth-child(4)>a:hover>img{
+	animation: heart 0.5s linear;
+}
+.function>div:nth-child(3)>a>img:hover,
+.function>div:nth-child(5)>a>img:hover{
+	animation: rotate 1s linear;
+}
+.function>div:nth-last-child(1)>a>img{
+	border: 2px solid #DBDBDB;
+	border-radius: 50%;
+}
+.display-info{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(1,1,1,0.65);
+	display: none;
+	z-index: 10;
+	text-align: center;
+}
+.display-info>img{
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.main{
+	width: 100%;
+	/* height: 1000px; */
+	/* padding-top: 60px; */
+	padding-top: 30px;
+	background-color: #FAFAFA;
+	position: relative;
+}
+@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes fly{
+	0%{
+		transform: scale(1,1);
+	}
+	25%{
+		transform: scale(0.5,0.5);
+	}
+	50%{
+		transform: translate(-5px,5px);
+	}
+	75%{
+		transform: translate(5px,-5px);
+	}
+	100%{
+		transform: translate(0px,0px);
+	}
+}
+@keyframes heart{
+	0%{
+		transform: scale(1,1);
+	}
+	25%{
+		transform: scale(1.2,1.2);
+	}
+	50%{
+		transform: scale(1,1);
+	}
+	75%{
+		transform: scale(1.2,1.2);
+	}
+	100%{
+		transform: scale(1,1);
+	}
+}
+@keyframes shiver{
+	25%{
+		transform: translate(1px,-0.5px);
+	}
+	75%{
+		transform: translate(-1px,0.5px);
+	}
+}
